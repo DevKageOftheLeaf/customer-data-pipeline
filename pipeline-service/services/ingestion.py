@@ -48,7 +48,7 @@ def get_flask_data():
 def load_to_postgres(data):
     """Load data into PostgreSQL using dlt pipeline"""
     # Get database URL from environment
-    database_url = os.getenv("DATABASE_URL", "postgresql://postgres:root@postgres:5432/customer_db")
+    database_url = os.getenv("DATABASE_URL", "postgresql://postgres:password@postgres:5432/customer_db")
     
     # Create dlt pipeline with explicit credentials
     pipeline = dlt.pipeline(
