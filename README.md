@@ -130,7 +130,7 @@ docker-compose up -d
 
 ## Environment Variables
 The pipeline service requires:
-- `DATABASE_URL`: postgresql://postgres:root@postgres:5432/customer_db
+- `DATABASE_URL`: postgresql://postgres:password@postgres:5432/customer_db
 
 This is automatically set in docker-compose.yml.
 
