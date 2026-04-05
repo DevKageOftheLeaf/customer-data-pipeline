@@ -50,6 +50,7 @@ def load_to_postgres(data):
     # Get database URL from environment
     database_url = os.getenv("DATABASE_URL", "postgresql://postgres:password@postgres:5432/customer_db")
     
+    
     # Create dlt pipeline with explicit credentials
     pipeline = dlt.pipeline(
         pipeline_name="customer_ingestion",
